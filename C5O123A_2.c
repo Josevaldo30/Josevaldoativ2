@@ -12,6 +12,7 @@
 // Variável para controlar se a sequência de LEDs está ativa
 volatile bool is_led_sequence_active = false;
 
+
 // Callback para desligar o LED verde após um intervalo de tempo
 int64_t turn_off_green_callback(alarm_id_t id, void *user_data) {
     gpio_put(LED_GREEN_PIN, 0);  // Desliga o LED verde
